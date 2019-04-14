@@ -15,6 +15,6 @@ const StorybookUIRoot = getStorybookUI({});
 
 // If you are using React Native vanilla write your app name here.
 // If you use Expo you can safely remove this line.
-AppRegistry.registerComponent('%APP_NAME%', () => StorybookUIRoot);
+AppRegistry.registerComponent('Recall', () => StorybookUIRoot);
 
 export default StorybookUIRoot;

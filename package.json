@@ -15,7 +15,8 @@
     "ios": "yarn rn run-ios",
     "ios-sim": "yarn rn run-ios --simulator 'iPhone X' --scheme 'Production'",
     "android": "yarn rn run-android",
-    "clear-rn-cache": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/metro* && rm -rf $TMPDIR/haste-*"
+    "clear-rn-cache": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/metro* && rm -rf $TMPDIR/haste-*",
+    "update-snapshots": "jest -u"
   },
   "dependencies": {
     "react": "16.8.3",
