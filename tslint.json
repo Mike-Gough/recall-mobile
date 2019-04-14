@@ -4,5 +4,14 @@
   "jsRules": {},
   "rules": {},
   "rulesDirectory": [],
-  "linterOptions": {}
+  "linterOptions": {
+      "exclude": [
+        "bin",
+        "build",
+        "config",
+        "coverage",
+        "node_modules",
+        "storybook"
+      ]
+  }
 }
