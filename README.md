@@ -1,4 +1,5 @@
 # Recall
+[![CircleCI](https://circleci.com/gh/Mike-Gough/recall-mobile/tree/master.svg?style=svg)](https://circleci.com/gh/Mike-Gough/recall-mobile/tree/master)
 
 This project was set up with following [React Native App Creation Gist](https://gist.github.com/Mike-Gough/719479d18402bfe6fb81b6ce0f26fae3).
 
