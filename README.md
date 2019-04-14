@@ -1,4 +1,4 @@
-# Recal
+# Recall
 
 This project was set up with following [React Native App Creation Gist](https://gist.github.com/Mike-Gough/719479d18402bfe6fb81b6ce0f26fae3).
 
