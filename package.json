@@ -1,0 +1,66 @@
+{
+  "name": "recall",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "coverage": "yarn run test --coverage",
+    "format": "prettier --write 'src/**/*.{ts,tsx}' && tslint --fix --project .",
+    "lint": "tsc && tslint --project tsconfig.json",
+    "format:check": "prettier -c 'src/**/*.{ts,tsx}'",
+    "storybook": "watch rnstl ./src --wait=100 | storybook start | yarn start --projectRoot storybook --watchFolders $PWD",
+    "rn": "node node_modules/react-native/local-cli/cli.js",
+    "ios": "yarn rn run-ios",
+    "ios-sim": "yarn rn run-ios --simulator 'iPhone X' --scheme 'Production'",
+    "android": "yarn rn run-android",
+    "clear-rn-cache": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/metro* && rm -rf $TMPDIR/haste-*"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.4",
+    "react-native-config": "^0.11.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "@storybook/addon-actions": "^4.1.16",
+    "@storybook/addon-links": "^4.1.16",
+    "@storybook/addons": "^4.1.16",
+    "@storybook/react-native": "^4.1.16",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.13",
+    "@types/react-native": "^0.57.43",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/storybook__react-native": "^3.0.4",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.7.1",
+    "babel-runtime": "^6.26.0",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "prettier": "^1.17.0",
+    "prop-types": "^15.7.2",
+    "react-dom": "16.8.3",
+    "react-native-storybook-loader": "^1.8.0",
+    "react-native-testing-library": "^1.7.0",
+    "react-test-renderer": "16.8.3",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./storybook/storyLoader.js"
+    }
+  }
+}
