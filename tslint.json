@@ -1,17 +1,21 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint-react", "tslint-config-prettier", "tslint-consistent-codestyle"],
+  "extends": [
+    "tslint-react",
+    "tslint-config-prettier",
+    "tslint-consistent-codestyle"
+  ],
   "jsRules": {},
   "rules": {},
   "rulesDirectory": [],
   "linterOptions": {
-      "exclude": [
-        "bin",
-        "build",
-        "config",
-        "coverage",
-        "node_modules",
-        "storybook"
-      ]
+    "exclude": [
+      "bin",
+      "build",
+      "config",
+      "coverage",
+      "node_modules/**",
+      "storybook"
+    ]
   }
 }
