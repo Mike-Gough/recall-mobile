@@ -1,5 +1,5 @@
 import React from 'react';
-import createBottomTabNavigator from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 import Home from './Home';
 import Settings from './Settings';
 import Ionicons from 'react-native-vector-icons/Ionicons';
