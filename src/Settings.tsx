@@ -7,16 +7,24 @@ import {
 
 export default class Friends extends React.Component<NavigationScreenProps> {
 
+    static navigationOptions = (
+        screenProps: NavigationScreenProps,
+    ): NavigationStackScreenOptions => {
+        return {
+            title: 'Settings',
+            headerTitleStyle: {
+                textAlign: 'center',
+                alignSelf: 'center'
+            },
+            headerStyle: {
+                backgroundColor: 'white',
+            }
+        };
+    }
+
     private homeButtonClicked = () => {
         this.props.navigation.navigate('Home')
     }
-
-    static navigationOptions = (
-        screenProps: NavigationScreenProps
-    ): NavigationStackScreenOptions => {
-        return {
-        };
-    };
 
     render() {
         return (

@@ -7,6 +7,17 @@ import {
 
 export default class Home extends React.Component<NavigationScreenProps> {
 
+    static navigationOptions = {
+        title: 'Home',
+        headerTitleStyle: {
+            textAlign: 'center',
+            alignSelf: 'center'
+        },
+        headerStyle: {
+            backgroundColor: 'white',
+        }
+    }
+
     private settingsButtonClicked = () => {
         this.props.navigation.navigate('Settings')
     }

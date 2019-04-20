@@ -1,12 +1,20 @@
 import React from 'react';
-import { createBottomTabNavigator } from 'react-navigation';
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import Home from './Home';
 import Settings from './Settings';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const AppNavigator = createBottomTabNavigator({
+const HomeStack = createStackNavigator({
     Home: Home,
+})
+
+const SettingsStack = createStackNavigator({
     Settings: Settings,
+})
+
+const TabNavigator = createBottomTabNavigator({
+    Home: HomeStack,
+    Settings: SettingsStack
 },
     {
         defaultNavigationOptions: ({ navigation }) => ({
@@ -34,6 +42,15 @@ const AppNavigator = createBottomTabNavigator({
             activeTintColor: 'tomato',
             inactiveTintColor: 'gray',
         },
-    });
+    }
+)
 
-export default AppNavigator;
+const AppNavigator = createStackNavigator({
+    Home: TabNavigator,
+    Settings: SettingsStack,
+},
+    {
+        headerMode: 'none'
+    })
+
+export default AppNavigator
