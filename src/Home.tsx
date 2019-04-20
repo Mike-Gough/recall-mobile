@@ -1,39 +1,31 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import {
-    NavigationScreenProps,
-    NavigationStackScreenOptions
-} from "react-navigation";
+import { NavigationScreenProps, NavigationStackScreenOptions } from 'react-navigation';
 
 export default class Home extends React.Component<NavigationScreenProps> {
+  static navigationOptions = {
+    title: 'Home',
+  };
 
-    static navigationOptions = {
-        title: 'Home'
-    }
+  private settingsButtonClicked = () => {
+    this.props.navigation.navigate('Settings');
+  };
 
-    private settingsButtonClicked = () => {
-        this.props.navigation.navigate('Settings')
-    }
-
-    render() {
-
-        return (
-            <View style={styles.container}>
-                <Text>Home page!</Text>
-                <Button
-                    title="Go to settings"
-                    onPress={this.settingsButtonClicked}
-                />
-            </View>
-        );
-    }
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Home page!</Text>
+        <Button title="Go to settings" onPress={this.settingsButtonClicked} />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
