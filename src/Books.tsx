@@ -5,14 +5,10 @@ import {
     NavigationStackScreenOptions
 } from "react-navigation";
 
-export default class Friends extends React.Component<NavigationScreenProps> {
+export default class Books extends React.Component<NavigationScreenProps> {
 
-    static navigationOptions = (
-        screenProps: NavigationScreenProps,
-    ): NavigationStackScreenOptions => {
-        return {
-            title: 'Settings'
-        }
+    static navigationOptions = {
+        title: 'Books'
     }
 
     private homeButtonClicked = () => {
@@ -20,9 +16,10 @@ export default class Friends extends React.Component<NavigationScreenProps> {
     }
 
     render() {
+
         return (
             <View style={styles.container}>
-                <Text>Settings Page!</Text>
+                <Text>Books page!</Text>
                 <Button
                     title="Back to home"
                     onPress={this.homeButtonClicked}
