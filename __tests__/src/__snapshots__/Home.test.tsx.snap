@@ -5,14 +5,15 @@ exports[`Render successfully 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#fff",
+      "backgroundColor": "white",
       "flex": 1,
       "justifyContent": "center",
+      "padding": 10,
     }
   }
 >
   <Text>
-    Home page!
+    Notes Page!
   </Text>
   <View
     accessibilityRole="button"
@@ -50,7 +51,7 @@ exports[`Render successfully 1`] = `
           ]
         }
       >
-        Go to settings
+        Go to books
       </Text>
     </View>
   </View>

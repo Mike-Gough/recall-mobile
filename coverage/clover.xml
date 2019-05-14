@@ -1,12 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1555217849121" clover="3.2.0">
-  <project timestamp="1555217849122" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
-    <file name="App.tsx" path="/Users/Mike/Documents/git/recall-mobile/src/App.tsx">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="22" count="1" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
+<coverage generated="1557875637473" clover="3.2.0">
+  <project timestamp="1557875637473" name="All files">
+    <metrics statements="69" coveredstatements="22" conditionals="18" coveredconditionals="0" methods="25" coveredmethods="7" elements="112" coveredelements="29" complexity="0" loc="69" ncloc="69" packages="1" files="6" classes="6"/>
+    <file name="AppNavigator.tsx" path="/Users/Mike/Documents/git/recall-mobile/src/AppNavigator.tsx">
+      <metrics statements="18" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="45" count="0" type="stmt"/>
+      <line num="54" count="0" type="stmt"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="63" count="0" type="stmt"/>
+      <line num="64" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="65" count="0" type="stmt"/>
+      <line num="68" count="0" type="cond" truecount="0" falsecount="3"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="71" count="0" type="stmt"/>
+      <line num="74" count="0" type="stmt"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="78" count="0" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="83" count="0" type="stmt"/>
+      <line num="93" count="0" type="stmt"/>
+    </file>
+    <file name="Book.tsx" path="/Users/Mike/Documents/git/recall-mobile/src/Book.tsx">
+      <metrics statements="18" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="24" count="0" type="cond" truecount="0" falsecount="3"/>
+      <line num="26" count="0" type="cond" truecount="0" falsecount="3"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="44" count="0" type="stmt"/>
+      <line num="45" count="0" type="stmt"/>
+      <line num="48" count="0" type="stmt"/>
+      <line num="49" count="0" type="stmt"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="57" count="0" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
+      <line num="81" count="0" type="stmt"/>
+    </file>
+    <file name="Books.tsx" path="/Users/Mike/Documents/git/recall-mobile/src/Books.tsx">
+      <metrics statements="15" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="88" count="1" type="stmt"/>
+      <line num="89" count="1" type="stmt"/>
+      <line num="90" count="1" type="stmt"/>
+      <line num="91" count="1" type="stmt"/>
+      <line num="92" count="3" type="stmt"/>
+      <line num="104" count="1" type="stmt"/>
+      <line num="105" count="4" type="stmt"/>
+      <line num="108" count="4" type="stmt"/>
+      <line num="109" count="0" type="stmt"/>
+      <line num="111" count="1" type="stmt"/>
+      <line num="112" count="4" type="stmt"/>
+      <line num="122" count="1" type="stmt"/>
+      <line num="135" count="1" type="stmt"/>
+    </file>
+    <file name="Home.tsx" path="/Users/Mike/Documents/git/recall-mobile/src/Home.tsx">
+      <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+    </file>
+    <file name="Note.tsx" path="/Users/Mike/Documents/git/recall-mobile/src/Note.tsx">
+      <metrics statements="6" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="16" count="0" type="cond" truecount="0" falsecount="3"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+    </file>
+    <file name="Settings.tsx" path="/Users/Mike/Documents/git/recall-mobile/src/Settings.tsx">
+      <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

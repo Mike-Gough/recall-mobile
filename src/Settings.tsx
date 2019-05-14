@@ -10,14 +10,14 @@ export default class Friends extends React.Component<NavigationScreenProps> {
   };
 
   private homeButtonClicked = () => {
-    this.props.navigation.navigate('Home');
+    this.props.navigation.navigate('Notes');
   };
 
   render() {
     return (
       <View style={styles.container}>
         <Text>Settings Page!</Text>
-        <Button title="Back to home" onPress={this.homeButtonClicked} />
+        <Button title="Back to notes" onPress={this.homeButtonClicked} />
       </View>
     );
   }
@@ -26,8 +26,9 @@ export default class Friends extends React.Component<NavigationScreenProps> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
   },
 });

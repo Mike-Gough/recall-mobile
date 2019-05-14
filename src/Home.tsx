@@ -1,21 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Button, Text, View } from 'react-native';
 import { NavigationScreenProps, NavigationStackScreenOptions } from 'react-navigation';
+import { BookScreenProps } from './Book';
 
 export default class Home extends React.Component<NavigationScreenProps> {
-  static navigationOptions = {
-    title: 'Home',
+  static navigationOptions = (screenProps: NavigationScreenProps): NavigationStackScreenOptions => {
+    return {
+      title: 'Notes',
+    };
   };
 
-  private settingsButtonClicked = () => {
-    this.props.navigation.navigate('Settings');
+  private homeButtonClicked = () => {
+    this.props.navigation.navigate('Books');
   };
 
   render() {
     return (
       <View style={styles.container}>
-        <Text>Home page!</Text>
-        <Button title="Go to settings" onPress={this.settingsButtonClicked} />
+        <Text>Notes Page!</Text>
+        <Button title="Go to books" onPress={this.homeButtonClicked} />
       </View>
     );
   }
@@ -24,8 +27,9 @@ export default class Home extends React.Component<NavigationScreenProps> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
   },
 });

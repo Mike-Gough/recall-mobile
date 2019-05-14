@@ -6,23 +6,25 @@ import {
 } from 'react-navigation';
 import Home from './Home';
 import Books from './Books';
+import Book from './Book';
+import Note from './Note';
 import Settings from './Settings';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 let navigationOptions: NavigationStackScreenOptions = {
   headerTitleStyle: {
-    fontWeight: 'bold',
+    fontSize: 22,
     textAlign: 'left',
-    alignSelf: 'center',
+    alignSelf: 'auto',
   },
   headerStyle: {
     backgroundColor: 'white',
   },
 };
 
-const HomeStack = createStackNavigator(
+const NotesStack = createStackNavigator(
   {
-    Home: Home,
+    Notes: Home,
   },
   {
     defaultNavigationOptions: navigationOptions,
@@ -32,6 +34,8 @@ const HomeStack = createStackNavigator(
 const BooksStack = createStackNavigator(
   {
     Books: Books,
+    Book: Book,
+    Note: Note,
   },
   {
     defaultNavigationOptions: navigationOptions,
@@ -49,7 +53,7 @@ const SettingsStack = createStackNavigator(
 
 const TabNavigator = createBottomTabNavigator(
   {
-    Home: HomeStack,
+    Notes: NotesStack,
     Books: BooksStack,
     Settings: SettingsStack,
   },
@@ -62,7 +66,7 @@ const TabNavigator = createBottomTabNavigator(
         let iconName;
 
         switch (routeName) {
-          case 'Home': {
+          case 'Notes': {
             iconName = `ios-paper`;
             break;
           }

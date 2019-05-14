@@ -2,6 +2,7 @@ import React from 'react';
 import Books from '../../src/Books';
 import renderer from 'react-test-renderer';
 import { NavigationStackScreenOptions, NavigationScreenProp, NavigationRoute, NavigationParams } from 'react-navigation';
+import { BookScreenProps } from '../../src/Book';
 
 test('Render successfully', () => {
 
